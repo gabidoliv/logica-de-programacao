@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-06-14 09:12:29 "/>
+        <attribute name="created" value="R2FicmllbGE7REVTS1RPUC1WNUJWNDI5OzIwMjEtMDYtMTQ7IjA5OjA3OjMwICI7MzAxNA=="/>
+        <attribute name="edited" value="R2FicmllbGE7REVTS1RPUC1WNUJWNDI5OzIwMjEtMDYtMTQ7IjA5OjEyOjI5ICI7MjszMTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia" type="Integer" array="False" size=""/>
+            <declare name="mes" type="Integer" array="False" size=""/>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <declare name="numeroDias" type="Integer" array="False" size=""/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <input variable="dia"/>
+            <input variable="mes"/>
+            <input variable="ano"/>
+            <input variable="numeroDias"/>
+            <input variable="index"/>
+            <while expression="index&lt;7">
+                <assign variable="numeroDias" expression="31*(mes-1)+dia"/>
+                <assign variable="index" expression="index+1"/>
+            </while>
+            <while expression="index&lt;4">
+                <assign variable="numeroDias" expression="30*(mes-1)+dia"/>
+                <assign variable="index" expression="index-1"/>
+            </while>
+            <output expression="numeroDias" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
