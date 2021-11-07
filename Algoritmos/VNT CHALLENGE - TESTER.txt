@@ -1,0 +1,10 @@
+Considerando o algoritmo, execute o teste de mesa:
+
+- Cada linha represente uma execução.
+- Faça 3 execuções.
+
+inteiro days, yearsOld
+escreva("Digite quantos anos você tem em dias\n")
+leia(days)
+yearsOld= days / 365
+escreva("Vocês tem ", yeardsOld, "anos \n")
